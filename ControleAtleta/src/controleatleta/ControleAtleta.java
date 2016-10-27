@@ -1,9 +1,15 @@
 package controleatleta;
 
-public class ControleAtleta {
+import javax.swing.JFrame;
 
+public class ControleAtleta {
+    
     public static void main(String[] args) {
-        CadastroBoxeador cadastro = new CadastroBoxeador();
-        cadastro.setVisible(true);
+        
+        ButtonFrameOptions buttonOptions= new ButtonFrameOptions();
+        buttonOptions.setDefaultCloseOperation( JFrame.DO_NOTHING_ON_CLOSE ); 
+        buttonOptions.setResizable( false );
+        buttonOptions.setSize(260,320);
+        buttonOptions.setVisible( true );
     }
 }
