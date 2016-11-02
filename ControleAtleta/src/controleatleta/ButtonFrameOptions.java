@@ -47,8 +47,11 @@ public class ButtonFrameOptions extends JFrame {
                 JBoxeButton.setEnabled( false );
             }
             else if ( event.getActionCommand() == "Futebol" ) {
-                JOptionPane.showMessageDialog(ButtonFrameOptions.this,
-                String.format("You Pressed: %s",event.getActionCommand()));
+                CadastroJogadorFutebol cadastro2 = new CadastroJogadorFutebol();
+                cadastro2.setVisible(true);
+                cadastro2.setDefaultCloseOperation( JFrame.DO_NOTHING_ON_CLOSE );
+                cadastro2.setResizable( false );
+                JFutebolButton.setEnabled( false );
             }
             else {
                 System.exit(0);
