@@ -4,20 +4,21 @@ import java.util.ArrayList;
 
 public class JogadorFutebol extends Atleta {
     
-    private char classificacao; // M=Masculino F=Feminino    
+    private char categoria; // A=Amador e P=Profissional 
     private char posicao; // D=Defensor M=MeioDeCampo A=Atacante G=Goleiro
-    private String categoria;
+    private char classe;
     /*
-        Chupetinha  -> 06-07 anos
-        Fraldinha   -> 08-09 anos
-        Pré-Mirim   -> 10-11 anos
-        Mirim       -> 12-13 anos
-        Infantil    -> 14-15 anos
-        Juvenil     -> 16-17 anos
-        Adulto      -> 18+ anos
-        Master      -> 40+ anos
+        "C" Chupetinha -> 06-07 anos
+        "F" Fraldinha -> 08-09 anos
+        "M" Mirim -> 10-11 anos
+        "I" Infantil -> 12-13 anos
+        "J" Juvenil -> 14-15 anos
+        "U" Junior -> 16-17 anos
+        "A" Adulto -> 18+ anos
+        "S" Master -> 40+ anos
     */
     private ArrayList<Premiacao> premiacoes;
+    private int totalGols;
     private int totalJogos;
     private int totalVitoriasEmCasa;
     private int totalVitoriasForaCasa;
@@ -29,18 +30,34 @@ public class JogadorFutebol extends Atleta {
         super(nome);
     }
 
-    public char getClassificacao() {
-        return classificacao;
+    public void setCategoria(char categoria) {
+        this.categoria = categoria;
     }
     
-    public void setClassificacao(char classificacao) {
-        this.classificacao = classificacao;
+    public char getCategoria() {
+        return categoria;
+    }
+    
+    public char getClasse() {
+        return classe;
+    }
+    
+    public void setClasse(char classe) {
+        this.classe = classe;
     }
 
     public int getTotalDerrotas() {
         return totalDerrotas;
     }
 
+    public void setTotalGols(int gols) {
+        this.totalGols = gols;
+    }
+    
+    public int getTotalGols() {
+        return totalGols;
+    }
+    
     public void setTotalDerrotas(int derrotas) {
         this.totalDerrotas = derrotas;
     }
@@ -85,12 +102,12 @@ public class JogadorFutebol extends Atleta {
         this.premiacoes = premiacoes;
     }
 
-    public int getTotalVitorias() {
-        return totalVitoriasEmCasa;
+    public int getTotalVitoriasForaCasa() {
+        return totalVitoriasForaCasa;
     }
 
-    public void setTotalVitorias(int vitorias) {
-        this.totalVitoriasEmCasa = vitorias;
+    public void setTotalVitoriasForaCasa(int vitorias) {
+        this.totalVitoriasForaCasa = vitorias;
     }
     
     public int getTotalVitoriasEmCasa() {
@@ -99,9 +116,5 @@ public class JogadorFutebol extends Atleta {
 
     public void setTotalVitoriasEmCasa(int vitoriasEmCasa) {
         this.totalVitoriasEmCasa = vitoriasEmCasa;
-    }
-    
-    public void setCategoria(String categoria) {
-        this.categoria= categoria;
-    }
+    }  
 }

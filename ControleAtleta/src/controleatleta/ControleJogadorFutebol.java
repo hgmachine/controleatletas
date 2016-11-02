@@ -18,7 +18,7 @@ public class ControleJogadorFutebol {
         listaJogadoresFutebol.add(umJogadorFutebol);
     }
     
-    public void remover(Boxeador umJogadorFutebol) {
+    public void remover(JogadorFutebol umJogadorFutebol) {
         listaJogadoresFutebol.remove(umJogadorFutebol);
     }
     
