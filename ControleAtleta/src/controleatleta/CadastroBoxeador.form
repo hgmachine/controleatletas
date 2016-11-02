@@ -23,6 +23,25 @@
         </Component>
       </SubComponents>
     </Container>
+    <Container class="javax.swing.JPanel" name="jPanel4">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPane2">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+    </Container>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -46,29 +65,27 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabelListaBoxeadores" min="-2" max="-2" attributes="1"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jButtonNovo" linkSize="1" max="32767" attributes="1"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButtonAlterar" linkSize="1" min="-2" max="-2" attributes="0"/>
-                          </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jButtonNovo" linkSize="1" max="32767" attributes="1"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButtonAlterar" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButtonExcluir" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButtonPesquisar" linkSize="1" min="-2" max="-2" attributes="1"/>
+                          <EmptySpace min="-2" pref="222" max="-2" attributes="0"/>
+                          <Component id="jButtonSalvar" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButtonCancelar" linkSize="1" min="-2" pref="86" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButtonExcluir" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButtonPesquisar" linkSize="1" min="-2" max="-2" attributes="1"/>
-                      <EmptySpace min="-2" pref="222" max="-2" attributes="0"/>
-                      <Component id="jButtonSalvar" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButtonCancelar" linkSize="1" min="-2" pref="86" max="-2" attributes="0"/>
+                      <Component id="jScrollPane4" alignment="0" max="32767" attributes="1"/>
+                      <Component id="jTabbedPane1" alignment="0" pref="0" max="32767" attributes="1"/>
                   </Group>
-                  <Component id="jScrollPane4" alignment="0" max="32767" attributes="1"/>
-                  <Component id="jTabbedPane1" alignment="0" pref="0" max="32767" attributes="1"/>
+                  <Component id="jLabelListaBoxeadores" alignment="0" min="-2" max="-2" attributes="1"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -86,9 +103,9 @@
                   <Component id="jButtonSalvar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButtonCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabelListaBoxeadores" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
               <Component id="jScrollPane4" min="-2" pref="124" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jTabbedPane1" min="-2" pref="367" max="-2" attributes="0"/>
@@ -235,6 +252,9 @@
           </Layout>
           <SubComponents>
             <Component class="javax.swing.JTextField" name="jTextFieldNome">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldNomeActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabelNome">
               <Properties>
@@ -666,7 +686,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="64" max="32767" attributes="0"/>
+                      <EmptySpace pref="65" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
